@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
     <!-- This is a Semantic HTML Change -->
-    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="reset.css">
     <!-- This is a Semantic HTML Change -->
     <link rel="stylesheet" href="main.css">
 
@@ -26,60 +26,68 @@
 
     <!-- This is an A11y Change -->
     <link rel="alternate" type="application/rss+xml" title="Personal Budget RSS Feed" href="/rss-feed.xml">
+    <style> 
+        li{
+           display: inline
+       }</style>
 </head>
-<body>
 
-    <nav class="menu" aria-label="Main Navigation"> <!-- This is a Semantic HTML Change and A11y Change -->
+<body>
+<div class="center" >
+    <div class="menu" aria-label="Main Navigation"> <!-- This is a Semantic HTML Change and A11y Change -->
         <ul>
+           
+          
             <li><a href="/">Homepage</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/login.html">Login</a></li>
             <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a></li> <!-- This is an A11y Change -->
         </ul>
-    </nav>
+    </div>
+</div>
 
-    <header class="hero"> <!-- This is a Semantic HTML Change -->
+    <div class="hero"> <!-- This is a Semantic HTML Change -->
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </header>
+    </div>
 
     <main class="container center" role="main"> <!-- This is a Semantic HTML Change and A11y Change -->
 
-        <section class="page-area"> <!-- This is a Semantic HTML Change -->
+        <div class="page-area"> <!-- This is a Semantic HTML Change -->
 
-            <article class="text-box"> <!-- This is a Semantic HTML Change -->
+            <div class="text-box"> <!-- This is a Semantic HTML Change -->
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </article>
+            </div>
     
-            <article class="text-box"> <!-- This is a Semantic HTML Change -->
+            <div class="text-box"> <!-- This is a Semantic HTML Change -->
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </article>
+            </div>
     
-            <article class="text-box"> <!-- This is a Semantic HTML Change -->
+            <div class="text-box"> <!-- This is a Semantic HTML Change -->
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </article>
+            </div>
     
-            <article class="text-box"> <!-- This is a Semantic HTML Change -->
+            <div class="text-box"> <!-- This is a Semantic HTML Change -->
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
-            </article>
+            </div>
 
-        </section>
+        </div>
 
     </main>
 
