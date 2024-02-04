@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const data = require("./data.json");
 
 app.use('/', express.static('public'));
 
@@ -23,7 +24,7 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/budget', (req, res) => {
-    res.json(budget);
+    res.send(data);
 });
 app.listen(port, () => {
     console.log('Example app listening at http://localhost:${port}');
