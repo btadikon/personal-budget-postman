@@ -86,16 +86,13 @@
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </p>
             </div>
+            <div id="pie-chart"></div>
+            
 
         </div>
 
     </main>
 
-    <footer class="bottom" role="contentinfo"> <!-- This is a Semantic HTML Change and A11y Change -->
-        <div class="center">
-            All rights reserved &copy; Bharadwaaja Tadikonda
-        </div>
-    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -122,7 +119,7 @@
         }; 
 
         const ds = [];
-        var svg = d3.select("body")
+        var svg = d3.select("#pie-chart")
 	.append("svg")
 	.append("g")
 
@@ -133,8 +130,8 @@ svg.append("g")
 svg.append("g")
 	.attr("class", "lines");
 
-var width = 960,
-    height = 450,
+var width = 500,
+    height = 250
 	radius = Math.min(width, height) / 2;
 
 var pie = d3.layout.pie()
@@ -276,5 +273,10 @@ polyline.exit()
         }
         getBudget();
     </script>
+    <footer class="bottom" role="contentinfo"> <!-- This is a Semantic HTML Change and A11y Change -->
+        <div class="center">
+            All rights reserved &copy; Bharadwaaja Tadikonda
+        </div>
+    </footer>
 </body>
 </html>
